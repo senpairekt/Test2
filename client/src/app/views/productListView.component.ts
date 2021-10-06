@@ -6,10 +6,8 @@ import { Store } from "../services/store.service";
     selector: "product-list",
     templateUrl: "productListView.component.html"
 })
-export class ProductListView implements OnInit {
-
-    constructor(public store: Store) {      
-
+export default class ProductListView implements OnInit {
+    constructor(public store: Store) {
     }
     ngOnInit(): void {
         this.store.loadProducts()

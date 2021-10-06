@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { Store } from './services/store.service';
-import { ProductListView } from './views/productListView.component';
+import ProductListView from './views/productListView.component';
+
+
+
 
 @NgModule({
   declarations: [
