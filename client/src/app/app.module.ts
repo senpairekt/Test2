@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { Store } from './services/store.service';
 import ProductListView from './views/productListView.component';
+import { CartView } from './views/cartView.component';
 
 
 
@@ -11,7 +12,8 @@ import ProductListView from './views/productListView.component';
 @NgModule({
   declarations: [
         AppComponent,
-        ProductListView
+        ProductListView,
+        CartView
   ],
   imports: [
       BrowserModule,
