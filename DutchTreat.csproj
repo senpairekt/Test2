@@ -10,6 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="client\src\app\pages\loginPage.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="client\src\app\pages\loginPage.component.ts" />
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 

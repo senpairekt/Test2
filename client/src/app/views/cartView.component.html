@@ -23,5 +23,11 @@
     <td>{{ item.unitPrice * item.quantity | currency:"EUR" }}</td>
     </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5"><strong>Subtotal : {{ store.order.subtotal | currency: "EUR"}}</strong></td>
+        </tr>
+    </tfoot>
 </table>
+<a class="btn btn-success" *ngIf= "store.order.items.length > 0"routerLink="checkout">Checkout</a>
 <hr />
